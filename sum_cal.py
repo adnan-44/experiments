@@ -4,6 +4,7 @@ while(True):
 	num = input()
 	if num == 'no':
 		print('done ')
+		print("Task executed.....')
 		exit()
 	i = i+1
 	print('Executed for the',i,' time')
