@@ -6,6 +6,7 @@ while(True):
 	if num == 'no':
 		print('done ')
 		print('Total sum is',i)
+		autoDo()
 		print('Task executed......')
 		exit()
 	i = i+int(num)
