@@ -19,14 +19,16 @@ def myFun(c_id, c_name, noe = 101, profit = 700):
 
 #main code
 c_id = int(input("Enter Company ID: "))
+c_name = input("Enter Company Name: ")
+noe = int(input("Enter Number of Employee: "))
+profit = float(input("Enter Profit: "))
+
+#condition
 if c_id%2 != 0:
-    c_name = input("Enter Company Name: ")
     if len(c_name) > 2:
-        #some code
+
         #condition for numebr for employee
-        noe = int(input("Enter Number of Employee: "))
         for i in range(2,13):
             if not noe % i ==0:
-                profit = float(input("Enter Profit: "))
                 myFun(c_id,c_name,noe,profit)
                 break
