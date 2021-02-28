@@ -1,7 +1,8 @@
-"""This code will read a line from file given by user"""
+"""This code will read all lines from file given by user"""
 file = open(input('Enter filename to open: '),'r')
 print("Starting pointer location in file is : ",file.tell())
-print("Reading first line:")
-print(file.readline())
-print("Pointer location after reading first line is : ",file.tell())
+print("Lines in file are :")
+for lines in file:
+    print(lines)
+print("Pointer location after reading lines is : ",file.tell())
 file.close()
