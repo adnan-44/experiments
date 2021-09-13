@@ -1,2 +1,4 @@
+# Don't track binary
 *.exe
 *.class
+*.out
